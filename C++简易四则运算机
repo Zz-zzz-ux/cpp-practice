@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+double a,b;
+char c;
+int main(){
+	cout<<"请输入第一个数字";
+	cin>>a;
+	cout<<"请输入第二个数字";
+	cin>>b;
+	cout<<"请输入运算符";
+	cin>>c;
+	if (c == '+'){
+		cout<<a<<c<<b<<"="<<a+b;
+	}
+	else if (c == '-'){
+		cout<<a<<c<<b<<"="<<a-b;
+	}
+	else if (c == '*'){
+		cout<<a<<c<<b<<"="<<a*b;
+	}
+	else if (c == '/'){
+		if(b == 0){
+			cout<<"除数不能为0！"; 
+		}
+		
+		else{
+			cout<<a<<c<<b<<"="<<a/b;
+		}
+	}
+	else{
+		cout<<"请输入运算符！";
+	}
+	return 0;
+} 
